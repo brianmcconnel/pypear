@@ -1,7 +1,5 @@
 # :pear:pypear: Adequate terminal based python development.
 
-Minimalist collection of tools for test driven development of python.
-
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
 There are many great tools available for python development.  This set of tools were collected to streamline test driven development through just a terminal and a simple conda install from conda-forge.
