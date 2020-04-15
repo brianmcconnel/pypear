@@ -1,4 +1,4 @@
-# :pear:pypear: Adequate terminal based python development.
+# :pie::pear:pypear: Adequate terminal based python development.
 
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
@@ -25,8 +25,7 @@ pre-commit-hooks: commonly used pre-commit hooks
 ## Linting
 ale: vim code linting for many languages plugin
 flake8: python linting
-autopep8: automatic pep8 formating
-(pre-commit supports linting)
+autopep8: automatic pep8 formating (pre-commit linting)
 
 ## Searching
 ctags: enables simple navigation of large or small code bases within vim.
@@ -42,6 +41,10 @@ vim-airline: Vim theme
 vim-airline-themes: airline themes
 tumxline: Coordinates tmux theme with vim theme
 promptline: Coordinates prompt theme with vim theme
+
+## Cheat Sheets
+tmux:
+vim:
 
 ## License
 
