@@ -1,0 +1,16 @@
+name: pypear
+
+dependencies:
+        - python
+        - git>=2
+        - tmux
+        - pytest
+        - vim >=8
+        - flake8
+        - autopep8
+        - ctags
+        - pip
+        - pip:
+                - pre-commit
+                - pre-commit-hooks
+
