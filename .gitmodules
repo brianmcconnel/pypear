@@ -40,3 +40,6 @@
 [submodule "vim-plugins/promptline.vim"]
 	path = vim-plugins/promptline.vim
 	url = git@github.com:edkolev/promptline.vim.git
+[submodule "vim-plugins/Vundle.vim"]
+	path = vim-plugins/Vundle.vim
+	url = git@github.com:VundleVim/Vundle.vim.git
