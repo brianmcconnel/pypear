@@ -19,10 +19,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
+    - name: Setup Python
+      uses: actions/setup-python@v1.2.0
     - name: Install git-archive-all
       run: |
         python -m pip install --upgrade pip
