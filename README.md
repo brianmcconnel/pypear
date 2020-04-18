@@ -1,4 +1,5 @@
 # :pie::pear:pypear: Adequate terminal based python development.
+![BUILD](https://github.com/brianmcconnel/pypear/workflows/CI/badge.svg)
 
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
