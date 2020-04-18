@@ -32,10 +32,10 @@ jobs:
 
     - uses: actions/upload-artifact@v1
       with:
-        name: build
+        name: pypear.tar.gz
         path: build/pypear.tar.gz
 
     - uses: actions/upload-artifact@v1
       with:
-        name: hash
+        name: pypear.hash
         path: build/pypear.hash
