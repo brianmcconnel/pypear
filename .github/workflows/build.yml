@@ -33,4 +33,9 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: build
-        path: build
+        path: build/pypear.tar.gz
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: hash
+        path: build/pypear.hash
