@@ -23,7 +23,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run the build
       run: bash build.sh
-    
-  artifacts:
-    paths:
-    - build
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: build
