@@ -1,7 +1,8 @@
 name: pypear
 
 dependencies:
-        - python
+        - python>=3
+        - make
         - git>=2
         - tmux
         - pytest

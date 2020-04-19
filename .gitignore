@@ -1,1 +1,4 @@
-build/
+vim-bundles/
+*.egg-info/
+.mypy_cache/
+__pycache__/
