@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: build
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -26,7 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install git-archive-all
 
-    # Runs a single command using the runners shell
+        # Runs a single command u:sing the runners shell
     - name: Run the build
       run: bash build.sh
 
