@@ -1,10 +1,12 @@
 from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
-    requirements = f.readlines()
+   requirements = [line.strip() for line in f]
 
-# with open('README.md') as f:
-#     long_description = f.readlines()
+print(requirements)
+
+with open('README.md') as f:
+    long_description = f.readlines()
 
 setup(name='pypear',
       version='0.1.0',
@@ -22,5 +24,5 @@ setup(name='pypear',
                    "License :: OSI Approved :: MIT License",
                    "Operating System :: OS Independent",),
       keywords='python tmux vim pypear',
-      requirements=requirements,
+      requires=requirements,
       zip_safe=True)

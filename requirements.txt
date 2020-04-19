@@ -2,4 +2,3 @@ autopep8
 flake8
 git-archive-all
 pytest
-

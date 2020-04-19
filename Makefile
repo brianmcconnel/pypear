@@ -1,6 +1,8 @@
 clean:
 	rm -rf vim-bundles
 	rm -rf pypear.egg-info
+	rm -rf build
+	rm -rf dist
 
 
 build: clean

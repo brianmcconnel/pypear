@@ -7,4 +7,4 @@ def test_import():
     """
     Test of the pypear import
     """
-    import pypear #noqa F401
+    import pypear  # noqa F401
