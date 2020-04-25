@@ -18,41 +18,41 @@ General arrangement, package installs development tools (git, tmux, vim, flake8,
 tmux: Terminal multiplexer running on server size, supports pair programming and session suspension.
 
 ## Text Editing
-vim (or Neovim): Vim is everywhere and is very usable over connections of any speed. Vim8 is recommended. Neovim because I like it. :)
-Vundle: vim plugin manager (just because it works)
+vim (or Neovim): Vim is everywhere and is very usable over connections of any speed. Vim8 is recommended. Neovim because I like it. :)<br>
+Vundle: vim plugin manager (just because it works)<br>
 
 ## Version Control
-git: the only way to configuration manage code.
-vim-fugitive: vim git plugin so good it should be illegal
-vim-gitgutter: vim git gutter plugin
-nerdtree: vim enhanced file explorer plugin
-nerdtree-git-plugin: vim git enhancement for file explorer plugin
-pre-commit: framework for managing hooks for pre-commit actions
-pre-commit-hooks: commonly used pre-commit hooks
+git: the only way to configuration manage code.<br>
+vim-fugitive: vim git plugin so good it should be illegal<br>
+vim-gitgutter: vim git gutter plugin<br>
+nerdtree: vim enhanced file explorer plugin<br>
+nerdtree-git-plugin: vim git enhancement for file explorer plugin<br>
+pre-commit: framework for managing hooks for pre-commit actions<br>
+pre-commit-hooks: commonly used pre-commit hooks<br>
 
 ## Linting
-ale: vim code linting for many languages plugin
-flake8: python linting
-autopep8: automatic pep8 formating (pre-commit linting)
+ale: vim code linting for many languages plugin<br>
+flake8: python linting<br>
+autopep8: automatic pep8 formating (pre-commit linting)<br>
 
 ## Searching
-ctags: enables simple navigation of large or small code bases within vim.
-ctrlp: fuzzy file search (interested in better alternatives)
+ctags: enables simple navigation of large or small code bases within vim.<br>
+ctrlp: fuzzy file search (interested in better alternatives)<br>
 
 ## Testing
-pytest: the "best" python testing framework.
-pytest-vim-compiler: pytest compiler
-vim-dispatch: enables asyc test and command running with tmux
+pytest: the "best" python testing framework.<br>
+pytest-vim-compiler: pytest compiler<br>
+vim-dispatch: enables asyc test and command running with tmux<br>
 
 ## Themes (Because it should be attractive)
-vim-airline: Vim theme
-vim-airline-themes: airline themes
-tumxline: Coordinates tmux theme with vim theme
-promptline: Coordinates prompt theme with vim theme
+vim-airline: Vim theme<br>
+vim-airline-themes: airline themes<br>
+tumxline: Coordinates tmux theme with vim theme<br>
+promptline: Coordinates prompt theme with vim theme<br>
 
 ## Cheat Sheets
-tmux:
-vim:
+tmux:<br>
+vim:<br>
 
 ## TODO
 1. Add good cheatsheet links
