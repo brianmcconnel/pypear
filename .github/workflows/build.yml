@@ -28,7 +28,7 @@ jobs:
 
         # Runs a single command u:sing the runners shell
     - name: Run the build
-      run: bash build.sh
+      run: make install
 
     - uses: actions/upload-artifact@v1
       with:
