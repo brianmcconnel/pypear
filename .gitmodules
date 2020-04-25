@@ -1,45 +1,45 @@
 [submodule "vim-plugins/vim-fugitive"]
-	path = vim-submodules/vim-fugitive
+	path = vim/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim-plugins/vim-sensible"]
-	path = vim-submodules/vim-sensible
+	path = vim/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim-plugins/vim-surround"]
-	path = vim-submodules/vim-surround
+	path = vim/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "vim-plugins/vim-dispatch"]
-	path = vim-submodules/vim-dispatch
+	path = vim/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 [submodule "vim-plugins/vim-gitgutter"]
-	path = vim-submodules/vim-gitgutter
+	path = vim/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "vim-plugins/nerdtree"]
-	path = vim-submodules/nerdtree
+	path = vim/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 [submodule "vim-plugins/nerdtree-git-plugin"]
-	path = vim-submodules/nerdtree-git-plugin
+	path = vim/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "vim-plugins/pytest-vim-compiler"]
-	path = vim-submodules/pytest-vim-compiler
+	path = vim/pytest-vim-compiler
 	url = https://github.com/5long/pytest-vim-compiler.git
 [submodule "vim-plugins/ale"]
-	path = vim-submodules/ale
+	path = vim/ale
 	url = https://github.com/dense-analysis/ale.git
 [submodule "vim-plugins/ctrlp.vim"]
-	path = vim-submodules/ctrlp.vim
+	path = vim/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim-plugins/vim-airline"]
-	path = vim-submodules/vim-airline
+	path = vim/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "vim-plugins/vim-airline-themes"]
-	path = vim-submodules/vim-airline-themes
+	path = vim/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "vim-plugins/tmuxline.vim"]
-	path = vim-submodules/tmuxline.vim
+	path = vim/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
 [submodule "vim-plugins/promptline.vim"]
-	path = vim-submodules/promptline.vim
+	path = vim/promptline.vim
 	url = https://github.com/edkolev/promptline.vim.git
 [submodule "vim-plugins/Vundle.vim"]
-	path = vim-submodules/Vundle.vim
+	path = vim/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git

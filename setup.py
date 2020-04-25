@@ -1,10 +1,13 @@
 from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
-   requirements = [line.strip() for line in f]
+    requirements = [line.strip() for line in f]
+
+with open('README.md') as f:
+    long_description = f.read()
 
 setup(name='pypear',
-      version='0.1.0',
+      version='0.0.2',
       author='Brian McConnel',
       author_email='brianmcconnel@gmail.com',
       url='https://github.com/brianmcconnel/pypear',
@@ -12,6 +15,8 @@ setup(name='pypear',
       license='MIT',
       packages=find_packages(),
       package_data={"pypear": ["vim-bundles/plugins.zip"]},
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       entry_points={'console_scripts': ['pypear = pypear.main:main']},
       classifiers=("Programming Language :: Python :: 3",
                    "License :: OSI Approved :: MIT License",
