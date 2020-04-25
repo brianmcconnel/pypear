@@ -3,6 +3,11 @@
 
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
+To install run the following command.
+```
+pypear
+```
+
 There are many great tools available for python development.  This set of tools was collected to streamline test driven development through just a terminal and a simple conda install from conda-forge.
 
 Visual Studio Code Remote Development plugins are excellent and are likely to be a better choice in most cases.  However, the simplicity of workflow possible with this collection of tools is impressive and should not be overlooked.  As with any tool it comes at the cost of learning to use the tools properly.

@@ -6,8 +6,11 @@ with open('requirements.txt') as f:
 with open('README.md') as f:
     long_description = f.read()
 
+with open('VERSION') as f:
+    version = f.read()
+
 setup(name='pypear',
-      version='0.0.3',
+      version=version,
       author='Brian McConnel',
       author_email='brianmcconnel@gmail.com',
       url='https://github.com/brianmcconnel/pypear',
@@ -17,7 +20,7 @@ setup(name='pypear',
       package_data={"pypear": ["vim/plugins.zip"]},
       long_description=long_description,
       long_description_content_type='text/markdown',
-      entry_points={'console_scripts': ['pypear = pypear.main:main']},
+      entry_points={'console_scripts': ['pypear = pypear.install:install']},
       classifiers=("Programming Language :: Python :: 3",
                    "License :: OSI Approved :: MIT License",
                    "Operating System :: OS Independent",),
