@@ -3,10 +3,11 @@
 
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
-To install run the following command.
+Caution this is a work in progress. The following command will install the vim plugins under the ~/.pypear/plugins/vim/ folder.
 ```
 pypear
 ```
+Note: for now that means you will need to do some manual vundle hacking.  (planning to update for an easier install)
 
 There are many great tools available for python development.  This set of tools was collected to streamline test driven development through just a terminal and a simple conda install from conda-forge.
 
@@ -57,6 +58,7 @@ vim:<br>
 ## TODO
 1. Add good cheatsheet links
 2. Build autodocs based on plugin documentation
+3. Add auto installer
 
 ## Contribution
 I don't intend to put a lot of effort into this packages, but completely willing to collaborate with others. If anyone knows of a better meta package that I could support rather than rolling my own let me know.
