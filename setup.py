@@ -7,7 +7,7 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(name='pypear',
-      version='0.0.1',
+      version='0.0.3',
       author='Brian McConnel',
       author_email='brianmcconnel@gmail.com',
       url='https://github.com/brianmcconnel/pypear',
