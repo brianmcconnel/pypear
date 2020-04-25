@@ -26,4 +26,4 @@ setup(name='pypear',
                    "Operating System :: OS Independent",),
       keywords='python tmux vim pypear',
       requires=requirements,
-      zip_safe=True)
+      zip_safe=False)

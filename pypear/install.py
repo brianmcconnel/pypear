@@ -15,12 +15,14 @@ def install():
         os.mkdir(install_dir)
         zip.extractall(path=install_dir)
 
+
 def vimrc_prepend(file_name):
     with open(file_name, 'r') as f:
         content = f.read()
     with open(file_name, 'w') as f:
         f.write('pypear\n')
         f.write(content)
+
 
 def gen_vimrc():
     with open(vim_template) as f:
