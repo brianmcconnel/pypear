@@ -36,10 +36,10 @@ jobs:
         path: build
 
     - name: Download artifact
-        uses: actions/download-artifact@v1.0.0
-        with:
-          name: pypear
-          path: artifact
+      uses: actions/download-artifact@v1.0.0
+      with:
+        name: pypear
+        path: artifact
 
     - name: Calculate package hash
       run: openssl sha256 artifact/pypear.zip | tee artifact:/pypear.hash
