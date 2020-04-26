@@ -26,7 +26,9 @@ lint:
 test: lint
 	pytest
 
-pypi: build test
+dist: build test
 	python setup.py sdist bdist_wheel
+
+pypi: dist
 	pip install twine
 	python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
