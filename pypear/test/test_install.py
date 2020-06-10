@@ -23,6 +23,14 @@ def test_install():
     install()
     assert os.path.exists(install_dir)
     assert os.path.exists(install_dir + '/plugins/vim/')
+    pypear = False
+    with open(install_dir + '/vimrc') as f:
+        for line in f:
+            if '.pypear' in line:
+                pypear = True
+                break
+    assert(pypear)
+    assert os.path.exists(install_dir + '/vimrc')
 
 
 def test_vimrc_prepend(tmp_config_file):
