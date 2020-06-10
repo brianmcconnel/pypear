@@ -9,6 +9,7 @@ vim_template = os.path.join(str(pathlib.Path.home()), '.pypear/vimrc')
 vim_plugins_dir = os.path.join(install_dir, 'plugins/vim')
 vimrc_template = os.path.join(current_path, 'vimrc_template')
 
+
 def install():
     print('Installing pypear: Terminal based python development')
     print('Unpacking vim plugins...')
