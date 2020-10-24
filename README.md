@@ -3,17 +3,15 @@
 
 Motivation:  How does a python developer streamline test driven development with only an ssh connection?
 
-Caution this is a work in progress. The following command will install the vim plugins under the ~/.pypear/plugins/vim/ folder.
+Installation: Caution this is a work in progress. The following command will install the vim plugins under the ~/.pypear/plugins/vim/ folder.
 ```
-pypear
+pip install pypear
+pypear #installs plugins in the ~/.pypear folder
 ```
-Note: for now that means you will need to do some manual vundle hacking.  (planning to update for an easier install)
 
-There are many great tools available for python development.  This set of tools was collected to streamline test driven development through just a terminal and a simple conda install from conda-forge.
+There are many great tools available for python development.  This set of tools was collected to streamline test driven development through just a terminal and a simple pip install. (Future: Would like to have this available from conda-forge)
 
 Visual Studio Code Remote Development plugins are excellent and are likely to be a better choice in most cases.  However, the simplicity of workflow possible with this collection of tools is impressive and should not be overlooked.  As with any tool it comes at the cost of learning to use the tools properly.
-
-General arrangement, package installs development tools (git, tmux, vim, flake8, autopep8, ctags, pytest) and vim plugins will be distributed with the package (location tbd).
 
 ## Terminal Multiplexing / Session Management / Pair Programming Support
 tmux: Terminal multiplexer running on server size, supports pair programming and session suspension.
@@ -58,7 +56,10 @@ vim:<br>
 ## TODO
 1. Add good cheatsheet links
 2. Build autodocs based on plugin documentation
-3. Add auto installer
+3. conda-forage installation
+4. neovim conda-forge installation
+5. pypear vim documentation
+6. offline pre-commit configuration
 
 ## Contribution
 I don't intend to put a lot of effort into this packages, but completely willing to collaborate with others. If anyone knows of a better meta package that I could support rather than rolling my own let me know.
