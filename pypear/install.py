@@ -21,6 +21,7 @@ def install():
         gen_vimrc()
         print('Pypear has finished installation in the ~/.pypear folder.')
         print('The file at the following location can be used to as .vimrc:', vim_template)
+        print('Note: for a simple install create a symbolic link: ln -s %s ~/.vimrc' % vim_template)
 
 
 def vimrc_prepend(file_name):
