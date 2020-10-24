@@ -1,6 +1,6 @@
 build/
 dist/
-vim/
+pypear/vim/
 *.egg-info/
 .mypy_cache/
 __pycache__/
