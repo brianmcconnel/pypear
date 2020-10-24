@@ -37,9 +37,17 @@ set mouse=a
 "==========Spelling=======
 " z= will bring up a list of options for miss spelled words
 " ]s moves to the next spelling error
+set spellfile=$HOME/.vim/spell/en.utf-8.add
 set spell
 set spellfile=$HOME/.vim/spell/en.utf-8.add
-highlight SpellBad cterm=NONE ctermfg=white ctermbg=52
+autocmd Filetype * hi clear SpellBad
+autocmd Filetype * hi SpellBad ctermbg=52
+autocmd Filetype * hi clear SpellRare
+autocmd Filetype * hi SpellRare ctermbg=52
+autocmd Filetype * hi clear SpellCap
+autocmd Filetype * hi SpellCap ctermbg=52
+autocmd Filetype * hi clear SpellLocal
+autocmd Filetype * hi SpellLocal ctermbg=52
 
 " ========Search=========
 set hlsearch
@@ -141,6 +149,10 @@ let g:airline_symbols.paste = 'Þ'
 "let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = 'Ɇ'
 let g:airline_symbols.whitespace = 'Ξ'
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" " Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 
 "promptline config
