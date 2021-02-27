@@ -30,7 +30,7 @@ lint:
 	flake8
 
 test: lint
-	pytest
+	pytest -s
 
 dist: build test
 	python setup.py sdist bdist_wheel
