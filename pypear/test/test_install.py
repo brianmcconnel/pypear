@@ -1,10 +1,10 @@
 import os
 import pathlib
 from pypear.install import install, vimrc_prepend
-
+from unittest.mock import patch
 from tempfile import TemporaryDirectory
-
 import pytest
+
 
 current_path = str(pathlib.Path(__file__).parent.absolute())
 install_dir = str(pathlib.Path.home()) + '/.pypear'
@@ -19,7 +19,8 @@ def tmp_config_file():
         yield file_name
 
 
-def test_install():
+@patch('pypear.install.ArgumentParser.parse_args')
+def test_install(mock_args, tmpdir):
     install()
     assert os.path.exists(install_dir)
     assert os.path.exists(install_dir + '/plugins/vim/')

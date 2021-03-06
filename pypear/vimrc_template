@@ -96,7 +96,7 @@ colorscheme slate
 " NERDTree Settings
 nmap + :NERDTreeToggle<CR>
 " NERDTree git plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustomg = {
     \ "Modified"  : "*",
     \ "Staged"    : "+",
     \ "Untracked" : "~",
@@ -154,16 +154,6 @@ let g:airline#extensions#tabline#enabled = 1
 " " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-
-"promptline config
-let g:promptline_powerline_symbols = 0
-let g:promptline_preset = {
-        \'a' : [ promptline#slices#host() ],
-        \'b' : [ promptline#slices#user() ],
-        \'c' : [ promptline#slices#cwd() ],
-        \'x' : [ promptline#slices#conda_env() ],
-        \'y' : [ promptline#slices#vcs_branch() ],
-        \'warn' : [ promptline#slices#last_exit_code() ]}
 
 "ctrlp settings
 "let g:ctrlp_working_path_mode = 'ra' "Limits search

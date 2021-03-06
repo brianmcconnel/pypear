@@ -3,27 +3,42 @@ import os
 import pathlib
 import shutil
 import subprocess
+from argparse import ArgumentParser
 
 current_path = str(pathlib.Path(__file__).parent.absolute())
 install_dir = os.path.join(str(pathlib.Path.home()),  '.pypear')
 vim_template = os.path.join(str(pathlib.Path.home()), '.pypear/vimrc')
 vim_plugins_dir = os.path.join(install_dir, 'plugins/vim')
 vimrc_template = os.path.join(current_path, 'vimrc_template')
+parser = ArgumentParser()
+parser.add_argument('-v', '--vimrc', action='store_true', help='backup current vimrc link to pypear vimrc.')
+
+
+def parse_args():
+    return parser.parse_args()
 
 
 def install():
     """Main installation entry point"""
     print('Installing pypear: Terminal based python development')
     print('Unpacking vim plugins...')
+    args = parse_args()
     with ZipFile(os.path.join(current_path,  'vim/plugins.zip')) as zip:
         if os.path.exists(install_dir):
             shutil.rmtree(install_dir)
         os.mkdir(install_dir)
         zip.extractall(path=install_dir)
-        git_plugins()
-        gen_vimrc()
-        print('Pypear has finished installation in the ~/.pypear folder.')
+    print('Initializing git repos for plugins...')
+    git_plugins()
+    print('Generating a vimrc...')
+    gen_vimrc()
+    print('The file at the following location can be used to as .vimrc:', vim_template)
+    print('Note: for a simple install create a symbolic link: ln -s %s ~/.vimrc' % vim_template)
+    print('Pypear has finished installation in the ~/.pypear folder.')
+    if args.vimrc:
         link_vimrc()
+    install_plugins()
+    print('Installation complete...')
 
 
 def vimrc_prepend(file_name):
@@ -85,9 +100,16 @@ def backup_vimrc():
 
 def link_vimrc():
     """Automatically link pypear vimrc"""
-    print('The file at the following location can be used to as .vimrc:', vim_template)
-    print('Note: for a simple install create a symbolic link: ln -s %s ~/.vimrc' % vim_template)
-    if input('Would you like pypear to do this automatically? (y/n): ') == 'y':
-        backup_vimrc().wait()
-        vim_file = os.path.join(str(pathlib.Path.home()),  '.vimrc')
-        subprocess.Popen(["ln", "-s", vim_template, vim_file]).wait()
+    backup_vimrc().wait()
+    print("Making a symbolic link to pypear vimrc...")
+    vim_file = os.path.join(str(pathlib.Path.home()),  '.vimrc')
+    subprocess.Popen(["ln", "-s", vim_template, vim_file]).wait()
+
+
+def install_plugins():
+    """Check for existing plugins and removed if they exist..."""
+    vim_plugins = os.path.join(str(pathlib.Path.home()),  '.vim', 'bundle', )
+    print("Removing existing bundles...")
+    subprocess.Popen(['rm', '-rf', vim_plugins]).wait()
+    print("Installing plugins...")
+    subprocess.Popen(['vim', '-c', ':PluginInstall', '-c', 'x', '-c', 'x']).wait()
