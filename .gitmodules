@@ -46,3 +46,24 @@
 [submodule "vim/vim-colors-solarized"]
 	path = vim/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "pre-commit/pre-commit-hooks"]
+	path = pre-commit/pre-commit-hooks
+	url = https://github.com/pre-commit/pre-commit-hooks
+[submodule "pre-commit/reorder_python_imports"]
+	path = pre-commit/reorder_python_imports
+	url = https://github.com/asottile/reorder_python_imports
+[submodule "pre-commit/pyupgrade"]
+	path = pre-commit/pyupgrade
+	url = https://github.com/asottile/pyupgrade
+[submodule "pre-commit/mirrors-mypy"]
+	path = pre-commit/mirrors-mypy
+	url = https://github.com/pre-commit/mirrors-mypy
+[submodule "pre-commit/flake8"]
+	path = pre-commit/flake8
+	url = https://gitlab.com/pycqa/flake8.git
+[submodule "pre-commit/pygrep-hooks"]
+	path = pre-commit/pygrep-hooks
+	url = https://github.com/pre-commit/pygrep-hooks.git
+[submodule "pre-commit/mirrors-isort"]
+	path = pre-commit/mirrors-isort
+	url = https://github.com/pre-commit/mirrors-isort.git

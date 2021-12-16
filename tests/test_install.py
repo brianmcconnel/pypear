@@ -30,7 +30,7 @@ def test_install(mock_args, tmpdir):
             if '.pypear' in line:
                 pypear = True
                 break
-    assert(pypear)
+    assert pypear
     assert os.path.exists(install_dir + '/vimrc')
 
 
