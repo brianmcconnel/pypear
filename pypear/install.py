@@ -4,6 +4,7 @@ import pathlib
 import shutil
 import subprocess
 from argparse import ArgumentParser
+import glob
 
 current_path = str(pathlib.Path(__file__).parent.absolute())
 install_dir = os.path.join(str(pathlib.Path.home()),  '.pypear')
@@ -25,8 +26,11 @@ def install():
     args = parse_args()
     with ZipFile(os.path.join(current_path,  'vim/plugins.zip')) as zip:
         if os.path.exists(install_dir):
-            shutil.rmtree(install_dir)
-        os.mkdir(install_dir)
+            for rootdir, subdirs, filenames in os.walk(f"{install_dir}/"):
+                for fn in filenames:
+                    os.remove(os.path.join(rootdir, fn))
+        else:
+            os.mkdir(install_dir)
         zip.extractall(path=install_dir)
     print('Initializing git repos for plugins...')
     git_plugins()
