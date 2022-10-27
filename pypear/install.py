@@ -1,10 +1,8 @@
 from zipfile import ZipFile
 import os
 import pathlib
-import shutil
 import subprocess
 from argparse import ArgumentParser
-import glob
 
 current_path = str(pathlib.Path(__file__).parent.absolute())
 install_dir = os.path.join(str(pathlib.Path.home()),  '.pypear')
