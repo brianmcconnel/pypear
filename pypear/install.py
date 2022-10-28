@@ -4,6 +4,7 @@ import pathlib
 import subprocess
 from argparse import ArgumentParser
 
+
 current_path = str(pathlib.Path(__file__).parent.absolute())
 install_dir = os.path.join(str(pathlib.Path.home()),  '.pypear')
 vim_template = os.path.join(str(pathlib.Path.home()), '.pypear/vimrc')
@@ -34,8 +35,10 @@ def install():
     git_plugins()
     print('Generating a vimrc...')
     gen_vimrc()
-    print('The file at the following location can be used to as .vimrc:', vim_template)
-    print('Note: for a simple install create a symbolic link: ln -s %s ~/.vimrc' % vim_template)
+    print(f'The file at the following location can be used to as .vimrc: {vim_template}')
+    print(f'Note: for a simple install create a symbolic link: ln -s {vim_template} ~/.vimrc')
+    print('Note: if using nvim you may need to add the following:')
+    print("echo 'source ~/.nvimrc' > ~/.config/nvim/init.vim")
     print('Pypear has finished installation in the ~/.pypear folder.')
     if args.vimrc:
         link_vimrc()
