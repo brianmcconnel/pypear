@@ -116,38 +116,17 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" unicode symbols
-"let g:airline_left_sep = '»'
-let g:airline_left_sep = ''
-"let g:airline_right_sep = '«'
-let g:airline_right_sep = ''
-"let g:airline_symbols.linenr = ''
-" let g:airline_symbols.linenr = ''
-"let g:airline_symbols.branch = '¶'
-"let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-"let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_symbols.notexists = 'Ɇ'
-"tmuxline.vim settings
-" let g:tmuxline_powerline_separators = 0
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '◀'
-" let g:airline_symbols.crypt = '🔒'
-" let g:airline_symbols.linenr = '☰'
-" let g:airline_symbols.linenr = '␊'
-" let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.maxlinenr = ''
-"let g:airline_symbols.maxlinenr = '㏑'
-"let g:airline_symbols.branch = '⎇'
-"let g:airline_symbols.spell = 'Ꞩ'
-let g:airline_symbols.notexists = 'Ɇ'
-let g:airline_symbols.whitespace = 'Ξ'
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" " Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
+"PromptLine Configuration
+"
+let g:promptline_powerline_symbols = 0
+
+let g:promptline_preset = {'a' : [ promptline#slices#host() ],
+                          \'b' : [ promptline#slices#user() ],
+                          \'c' : [ promptline#slices#cwd() ],
+                          \'y' : [ promptline#slices#vcs_branch() ],
+                          \'x' : [ promptline#slices#git_status() ],
+                          \'warn' : [ promptline#slices#last_exit_code() ]}
+
 
 
 "ctrlp settings
