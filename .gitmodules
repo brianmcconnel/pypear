@@ -37,9 +37,6 @@
 [submodule "vim-plugins/tmuxline.vim"]
 	path = vim/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
-[submodule "vim-plugins/promptline.vim"]
-	path = vim/promptline.vim
-	url = https://github.com/edkolev/promptline.vim.git
 [submodule "vim-plugins/Vundle.vim"]
 	path = vim/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
@@ -67,3 +64,6 @@
 [submodule "pre-commit/mirrors-isort"]
 	path = pre-commit/mirrors-isort
 	url = https://github.com/pre-commit/mirrors-isort.git
+[submodule "vim/promptline.vim"]
+	path = vim/promptline.vim
+	url = git@github.com:brianmcconnel/promptline.vim.git
