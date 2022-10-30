@@ -100,6 +100,12 @@ def backup_vimrc():
     print("Backing up current .vimrc to vimrc.bak just in case...")
     vim_file = os.path.join(str(pathlib.Path.home()),  '.vimrc')
     vim_backup = os.path.join(str(pathlib.Path.home()),  '.vimrc.bak')
+    print(vim_backup)
+    if os.path.exists(vim_backup):
+        print(f"A backup vimrc already exists {vim_backup}.")
+        result = input("Would you like to overwrite the current backup? [Y/n]")
+        if not result.lower().startswith('y'):
+            exit()
     return subprocess.Popen(["mv", vim_file, vim_backup])
 
 
@@ -118,3 +124,6 @@ def install_plugins():
     subprocess.Popen(['rm', '-rf', vim_plugins]).wait()
     print("Installing plugins...")
     subprocess.Popen(['vim', '-c', ':PluginInstall', '-c', 'x', '-c', 'x']).wait()
+    promptline_script = os.path.join(str(pathlib.Path.home()),  '.pypear', 'pypear_prompt.sh', )
+    print(f"The pypear promptline is located here: {promptline_script}")
+    subprocess.Popen(['vim', '-c', ':PromptlineSnapshot!', promptline_script, '-c', 'x', '-c', 'x']).wait()
