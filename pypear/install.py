@@ -126,4 +126,4 @@ def install_plugins():
     subprocess.Popen(['vim', '-c', ':PluginInstall', '-c', 'x', '-c', 'x']).wait()
     promptline_script = os.path.join(str(pathlib.Path.home()),  '.pypear', 'pypear_prompt.sh', )
     print(f"The pypear promptline is located here: {promptline_script}")
-    subprocess.Popen(['vim', '-c', ':PromptlineSnapshot!', promptline_script, '-c', 'x', '-c', 'x']).wait()
+    subprocess.Popen(['vim', '-c', f':PromptlineSnapshot! {promptline_script} airline', '-c', 'x', '-c', 'x']).wait()
