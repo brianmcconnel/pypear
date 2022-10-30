@@ -121,7 +121,7 @@ endif
 let g:promptline_powerline_symbols = 0
 
 let g:promptline_preset = {'a' : [ promptline#slices#host() ],
-                          \'b' : [ promptline#slices#user() ],
+                          \'b' : [ '\A', promptline#slices#user(), promptline#slices#conda_env() ],
                           \'c' : [ promptline#slices#cwd() ],
                           \'y' : [ promptline#slices#vcs_branch() ],
                           \'x' : [ promptline#slices#git_status() ],
